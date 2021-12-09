@@ -1,6 +1,79 @@
-.text {color: black;
-font-size: 36px;
-font-weight: 900;
-font-style: initial;
-font-family: 'Roboto', sans-serif;
-;}
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  font-size: 30px;
+  margin: 100px;
+  padding: 0;
+  color: black;
+  font-size: 36px;
+  font-weight: 900;
+  font-style: initial;
+  font-family: "Roboto", sans-serif;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#wrapper {
+  width: 1600px;
+  margin: 0 auto;
+  background-image: url(https://i.pinimg.com/originals/5e/7e/1a/5e7e1a2b26a8d555fed25e271dcbb379.png);
+}
+
+img {
+  margin: 0 auto;
+}
+
+#header {
+  height: 100px;
+  text-align: center;
+  background-color: #7b7aac;
+  padding-block: 1px;
+}
+.avatar {
+  margin: 20px 20px;
+  margin-right: 320px;
+  border-radius: 50%;
+  border: groove 1em rgb(126, 16, 190);
+}
+#left {
+  float: left;
+  width: 300px;
+  padding: 25px;
+  background-color: #2b7086;
+}
+#bg-left {
+  background: url(images/bg-left.png) left top repeat-y;
+}
+#right {
+  float: right;
+  width: 300px;
+  padding: 10px;
+  font-style: italic;
+  background-color: #4744dd;
+}
+#bg-right {
+  background: url(images/bg-right.png) right top repeat-y;
+}
+#content {
+  margin-left: 350px;
+  margin-right: 320px;
+  padding: 10px;
+  background-color: #26255e;
+}
+#footer {
+  clear: both;
+  height: 50px;
+  background-color: #49bd79;
+}
